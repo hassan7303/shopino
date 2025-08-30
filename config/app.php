@@ -104,6 +104,14 @@ return [
             explode(',', (string) env('APP_PREVIOUS_KEYS', ''))
         ),
     ],
+    'providers' => [
+        Modules\Product\ProductServiceProvider::class,
+        Modules\Category\CategoryServiceProvider::class,
+        Modules\Order\OrderServiceProvider::class,
+        Modules\User\UserServiceProvider::class,
+        Modules\Payment\PaymentServiceProvider::class,
+        Modules\Cart\CartServiceProvider::class,
+    ],
 
     /*
     |--------------------------------------------------------------------------

@@ -1,8 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace Modules\Order\Models;
 
+use App\Models\OrderItem;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Payment\Models\Payment;
+use Modules\User\Models\User;
 
 class Order extends Model
 {
