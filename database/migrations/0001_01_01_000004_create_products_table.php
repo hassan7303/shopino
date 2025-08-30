@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedInteger('stock')->default(0);
             $table->foreignId('category_id')->nullable()->constrained()->nullOnDelete();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
